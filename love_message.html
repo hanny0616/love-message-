@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            background-color: #ffebf0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .envelope {
+            width: 200px;
+            height: 120px;
+            background-color: #ff4d6d;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .envelope:before {
+            content: "Open Me";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="envelope" onclick="showMessage()"></div>
+
+    <div class="message" id="message">
+        <p>Gusto lang ko magpasalamat nimo for being my love, my best friend, ug akong pinaka-paboritong louran pag wakos mood. 
+        Bisag mag away-away ta usahay, I know na makaya rajud nato basta mo sorry rako😃 wala naka ga sorry nako di nako nimo 
+        palangga pero okay ra hayst. Pero bisag unsa pa mahitabo, ikaw ra gyud akong pili-on.</p>
+
+        <p>By the way, kabalo ka? Murag dapat ta mag-celebrate sa atong love in a very special way… basin pwede ta mag “exercise” later? 😏 Hahaha, joke lang (pero bitaw?).</p>
+
+        <p>I love you so much, langga. More lambing, more kulit, ug more hikaphikap to come! 😉</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
